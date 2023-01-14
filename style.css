@@ -1,35 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Ubuntu+Mono&display=swap');
 
 
 hr{border-width: 2px;
     border-color: gray;
 }
+a{color: #333;}
+a:hover{color: #000;}
 .container-main{
     max-width: 600px;
     text-align: center;
-    margin-top: 6%;
+    margin-top: 4%;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.container-sub img{height: 200px;
+    width: 200px;
+    border-radius: 100px;
 }
 .container-sub h1{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
 }
-p.quote{font-style: italic;
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.summary{
+    font-size: 18px;
+}
+.main-icons{
+    padding: 1% 15%;
+    text-align: center;
+    margin-top: 3%;
+}
+.content-text{
+    font-size: 18px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.content-icons{
+    padding: 1% 5%;
     text-align: center;
 }
-.container .summary{font-family: 'Lato',sans-serif;}
 
-.social-icons{
-    padding: 1% 10%;
+.content-icons li{display: inline-flex;
+    margin: auto 4%;
+}
+.icon a{font-size: 22px;
+    text-decoration: none;
+    color: #2c3e50;
     text-align: center;
 }
+.icon a:hover{text-decoration: underline;}
+
 .fa-twitter{color:  #1da1f2;}
 .fa-linkedin{color:   #0077b5;}
-.fa-mug-saucer{color: #2B1D14;}
-.fa-medium{color: #00ab6c;}
-.fa-youtube{color: #ff0000}
+.fa-github{color: #333;}
+.fa-instagram{color: #c13584;}
+.fa-facebook{color: #1877f2;}
+.fa-reddit{color: #ff4500;}
+.fa-spotify{color: #1db954}
+.fa-book-open{color: #2c3e50;}
 
-.cta{margin-bottom: 10%;
+.cta{margin-bottom: 5%;
+    font-size: 18px;
 }
 .cta input{width: 100%;
 }
@@ -38,12 +67,24 @@ p.quote{font-style: italic;
 @media screen and (max-width: 600px)  {
     .cta button{margin-top: 5%;}
 }
+.content-icons a:hover{text-decoration: none;}
+a:hover .fa-beat-hover {
+    -webkit-animation: fa-beat 1s infinite linear;
+    -moz-animation: fa-beat 1s infinite linear;
+    -o-animation: fa-beat 1s infinite linear;
+    animation: fa-beat 1s infinite linear;
+  }
 
-.articles{text-align: left;
-}
-.articles h2{font-family: 'Lato', sans-serif;}
-.articles li{margin-top: 3%;
-    font-style: italic;
-    list-style: inside;
-}
-.articles li a{color: black;}
+a:hover .fa-bounce-hover {
+    -webkit-animation: fa-bounce 1s infinite linear;
+    -moz-animation: fa-bounce 1s infinite linear;
+    -o-animation: fa-bounce 1s infinite linear;
+    animation: fa-bounce 1s infinite linear;
+  }
+
+  a:hover .fa-flip-hover {
+    -webkit-animation: fa-flip 2s infinite both;
+    -moz-animation: fa-flip 2s infinite both;
+    -o-animation: fa-flip 2s infinite both;
+    animation: fa-flip 2s infinite both;
+  }

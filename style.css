@@ -9,20 +9,20 @@ a:hover{color: #000;}
 .container-main{
     max-width: 600px;
     text-align: center;
-    margin-top: 6%;
+    margin-top: 10%;
     font-family: 'Ubuntu Mono', monospace;
 }
 
-.container-sub img{height: 200px;
-    width: 200px;
-    border-radius: 100px;
+.container-sub img{height: 120px;
+    width: 120px;
+    border-radius: 60px;
 }
 .container-sub h1{
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
 }
 .summary{
-    font-size: 16px;
+    font-size: 17px;
 }
 .summary:after {
     content: "_";
@@ -65,7 +65,7 @@ a:hover{color: #000;}
 .fa-spotify{color: #1db954}
 
 .cta{margin-bottom: 5%;
-    font-size: 18px;
+    font-size: 20px;
 }
 .cta input{width: 100%;
 }

@@ -9,10 +9,14 @@ a:hover{color: #000;}
 .container-main{
     max-width: 600px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 6%;
     font-family: 'Ubuntu Mono', monospace;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
+.container-sub{padding: 3%;}
 .container-sub img{height: 120px;
     width: 120px;
     border-radius: 60px;

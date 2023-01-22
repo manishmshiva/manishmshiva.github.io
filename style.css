@@ -24,12 +24,12 @@ a:hover{color: #000;}
 .summary{
     font-size: 17px;
 }
-.summary:after {
+/* .summary:after {
     content: "_";
     animation: blink 1s infinite;
     position: relative;
     right: 1%;
-}
+} */
 @keyframes blink {
     from { opacity: 1 }
     to { opacity: 0 }

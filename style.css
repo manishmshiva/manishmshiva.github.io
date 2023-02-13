@@ -75,6 +75,11 @@ a:hover{color: #000;}
 }
 .cta button{width: 100%;}
 
+#course-btn{
+    margin-top: 3%;
+}
+#course-btn img{height: 25px;
+width: 25px;}
 @media screen and (max-width: 600px)  {
     .cta button{margin-top: 5%;}
 }

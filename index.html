@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77K62BRZEK"></script>
     <script>
@@ -26,16 +27,16 @@
         <div class="col-md-auto container-sub">
             <img src="./dp.jpeg"/>
             <h1>Manish M. Shivanandhan</h1>
-            <p class="summary">Technical Product Manager with a strong affinity towards AI & Cybersecurity. Author at Skillshare, Educative and <a href="https://freecodecamp.org/news/author/manishmshiva" target="_blank">Freecodecamp</a>.</p>
+            <p class="summary">Technical Product Manager with a strong affinity towards AI & Cybersecurity. Author at <a href="https://www.skillshare.com/en/profile/Manish-Shivanandhan/751005667" target="_blank">Skillshare</a>, Educative and <a href="https://freecodecamp.org/news/author/manishmshiva" target="_blank">Freecodecamp</a>.</p>
             <div class="row main-icons">
+                <div class="col-4">
+                    <a class="btn btn-outline-dark" href="https://blog.manishmshiva.com/" target="_blank" ><i class="fa-brands fa-medium fa-beat-hover"></i> Articles</a>
+                </div>
                 <div class="col-4">
                     <a class="btn btn-outline-danger" href="https://youtube.com/@manishmshiva?sub_confirmation=true" target="_blank"><i class="fa-brands fa-youtube fa-beat-hover"></i> Videos</a>
                 </div>
                 <div class="col-4">
-                    <a class="btn btn-outline-success" href="https://blog.manishmshiva.com/" target="_blank" ><i class="fa-brands fa-medium fa-beat-hover"></i> Articles</a>
-                </div>
-                <div class="col-4" data-toggle="tooltip" title="Coming soon.">
-                    <a class="btn btn-outline-dark disabled" href="#" target="_blank"><i class="fa-solid fa-graduation-cap fa-beat-hover"></i> School</a>
+                    <a class="btn btn-outline-success" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/manishmshiva'});return false;"><i class="fa-solid fa-calendar fa-beat-hover"></i> Book a call</a>
                 </div>
             </div>
             <hr/>
@@ -63,6 +64,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.1/js/bootstrap.bundle.min.js" integrity="sha512-1TK4hjCY5+E9H3r5+05bEGbKGyK506WaDPfPe1s/ihwRjr6OtL43zJLzOFQ+/zciONEd+sp7LwrfOCnyukPSsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip({animation:true});

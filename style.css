@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Ubuntu+Mono&display=swap');
 
 hr{border-width: 2px;
-    border-color: gray;
+    border-color: #b2bec3;
 }
 a{color: #333;}
 h1,h2,h3,h4,h5,h6{
@@ -12,7 +12,7 @@ a:hover{color: #000;}
 .container-main{
     max-width: 1200px;
     text-align: center;
-    margin-top: 6%;
+    margin-top: 3%;
     font-family: 'Ubuntu Mono', monospace;
     border-style: solid;
     border-color: transparent;
@@ -28,25 +28,39 @@ a:hover{color: #000;}
 .summary{
     font-size: 17px;
 }
-.container-work{
+.container-posts{
     padding: 3%;
     text-align: left;
     border-left-style: solid;
-    border-color: #7f8c8d;
+    border-color: #b2bec3;
 }
-.container-work li{list-style: none;
+.container-posts li{list-style: none;
     margin-top: 5%;
     border-bottom-style: solid;
-    border-color: #333;
+    border-color: #b2bec3;
     padding: 1%;
 }
-.container-work a{font-weight: bold;
+.container-posts a{font-weight: bold;
     text-decoration: none;
     font-size: 1.2em;
     font-style: italic;
 }
-.container-work a:hover{text-decoration: underline;}
+.container-posts a:hover{text-decoration: underline;}
 
+.products h4{margin-bottom: 3%;}
+.product{
+    padding:3%;
+    text-align: center;
+}
+.product h5 a{text-decoration: none;}
+.product h5 a:hover{text-decoration: underline;}
+.product img{height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 @keyframes blink {
     from { opacity: 1 }
     to { opacity: 0 }

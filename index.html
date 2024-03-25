@@ -25,7 +25,7 @@
   <body>
     <div class="container-fluid container-main">
         <div class="row">
-            <div class="col-md-6 container-sub">
+            <div class="col-7 container-sub">
                 <img src="./dp.jpeg"/>
                 <h1>Manish M. Shivanandhan</h1>
                 <div class="row main-icons">
@@ -43,14 +43,26 @@
                 <hr/>
                 <a class="btn btn-danger btn-block" href="https://topmate.io/manishmshiva?utm_source=website" target="_blank"><i class="fa-solid fa-envelope fa-beat-hover"></i> Contact me</a>
                 <hr/>
-                <div class="row footer">
-                    <p id="cp"></p>
+                <div class="row products">
+                    <h4><i class="fa-solid fa-tools"></i> Products</h4>
+                    <div class="col-6 product">
+                        <div class="card">
+                            <img src="./storyspec.png" class="card-img-top"/>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://storyspec.xyz/" target="_blank">StorySpec</a></h5>
+                                <p class="card-text">Convert user stories into detailed project specifications.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 container-work">
+            <div class="col-5 container-posts">
                 <h2><i class="fa-solid fa-newspaper"></i> Latest posts</h2>
-
             </div>
+        </div>
+        <hr/>
+        <div class="row footer">
+            <p id="cp"></p>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -69,12 +81,12 @@
                 return response.json();
             })
             .then(data => {
-                const container = document.querySelector('.container-work');
+                const container = document.querySelector('.container-posts');
 
                 data.items.slice(0, 7).forEach(article => {
                     const listItem = document.createElement('li');
                     listItem.innerHTML = `
-                        <a href="${article.link}" target="_blank"><i class="fa fa-circle-right"></i> ${article.title}</a>
+                    <i class="fa fa-circle-right"></i> <a href="${article.link}" target="_blank"> ${article.title}</a>
                         <small>- ${new Date(article.pubDate).toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' })}</b></small>
                     `;
                     container.appendChild(listItem);

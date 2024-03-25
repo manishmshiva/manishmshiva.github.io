@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
 }
 a:hover{color: #000;}
 .container-main{
-    max-width: 1200px;
+    max-width: 700px;
     text-align: center;
     margin-top: 3%;
     font-family: 'Ubuntu Mono', monospace;
@@ -28,25 +28,25 @@ a:hover{color: #000;}
 .summary{
     font-size: 17px;
 }
-.container-posts{
+.container-posts,.container-videos{
     padding: 3%;
     text-align: left;
     border-left-style: solid;
     border-color: #b2bec3;
     overflow: auto;
 }
-.container-posts li{list-style: none;
+.container-posts li,.container-videos li{list-style: none;
     margin-top: 5%;
     border-bottom-style: solid;
     border-color: #b2bec3;
     padding: 1%;
 }
-.container-posts a{font-weight: bold;
+.container-posts a,.container-videos a{font-weight: bold;
     text-decoration: none;
     font-size: 1.2em;
     font-style: italic;
 }
-.container-posts a:hover{text-decoration: underline;}
+.container-posts a:hover,.container-videos a:hover{text-decoration: underline;}
 
 .products h4{margin-bottom: 3%;}
 .product{
@@ -96,7 +96,8 @@ a:hover{color: #000;}
 .fa-twitter{color:  #1da1f2;}
 .fa-linkedin{color:#0a66c2;}
 .fa-medium{color:  #00ab6c;}
-
+.fa-youtube{color:#ff0000}
+.fa-envelope{color: #ea4335;}
 .cta{margin-bottom: 5%;
     font-size: 18px;
 }

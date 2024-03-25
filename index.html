@@ -39,7 +39,7 @@
                         <a href="https://twitter.com/manishmshiva" target="_blank"><i class="fa-brands fa-twitter fa-beat-hover fa-2x"></i></a>
                     </div>
                 </div>
-                <p class="summary">Engineer & Product Manager. Working on solving interesting problems using tech. Author at <a href="https://www.skillshare.com/en/profile/Manish-Shivanandhan/751005667" target="_blank">Skillshare</a>, <a href="#" data-toggle="tooltip" title="in progress">Educative</a> and <a href="https://freecodecamp.org/news/author/manishmshiva" target="_blank">Freecodecamp</a>.</p>
+                <p class="summary">Engineer & Product Manager. Working on solving interesting problems using tech. Author at <a href="https://www.skillshare.com/en/profile/Manish-Shivanandhan/751005667" target="_blank">Skillshare</a>, <a href="https://www.educative.io/courses/scanning-with-nmap-a-complete-guide" target="_blank">Educative</a> and <a href="https://freecodecamp.org/news/author/manishmshiva" target="_blank">Freecodecamp</a>.</p>
                 <hr/>
                 <a class="btn btn-danger btn-block" href="https://topmate.io/manishmshiva?utm_source=website" target="_blank"><i class="fa-solid fa-envelope fa-beat-hover"></i> Contact me</a>
                 <hr/>
@@ -99,7 +99,7 @@
             .then(data => {
                 const container = document.querySelector('.container-posts');
 
-                data.items.slice(0, 7).forEach(article => {
+                data.items.slice(0, 10).forEach(article => {
                     const listItem = document.createElement('li');
                     listItem.innerHTML = `
                     <i class="fa fa-circle-right"></i> <a href="${article.link}" target="_blank"> ${article.title}</a>

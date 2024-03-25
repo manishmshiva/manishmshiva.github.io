@@ -33,6 +33,7 @@ a:hover{color: #000;}
     text-align: left;
     border-left-style: solid;
     border-color: #b2bec3;
+    overflow: auto;
 }
 .container-posts li{list-style: none;
     margin-top: 5%;

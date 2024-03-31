@@ -69,11 +69,14 @@ a:hover{color: #000;}
     from { opacity: 1 }
     to { opacity: 0 }
 }
-.main-icons{
-    text-align: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    padding: 0% 10%;
+.main-buttons{
+    border-width: 1px;
+    border-color: #b2bec3;
+    /* padding: 0% 10%; */
+}
+.sub-icons{padding: 3%;}
+.sub-icons i{
+    font-size: 1.5em;
 }
 .content-text{
     font-size: 18px;
@@ -94,11 +97,6 @@ a:hover{color: #000;}
 }
 .icon a:hover{text-decoration: underline;}
 
-.fa-twitter{color:  #1da1f2;}
-.fa-linkedin{color:#0a66c2;}
-.fa-medium{color:  #00ab6c;}
-.fa-youtube{color:#ff0000}
-.fa-envelope{color: #ea4335;}
 .cta{margin-bottom: 5%;
     font-size: 18px;
 }

@@ -25,32 +25,54 @@
   <body>
     <div class="container-fluid container-main">
         <div class="row">
+            <div class="col-2 offset-10">
+                <div class="row sub-icons">
+                    <div class="col" data-toggle="tooltip" title="Linkedin">
+                        <a href="https://www.linkedin.com/in/manishmshiva/" target="_blank"><i class="fa-brands fa-linkedin fa-beat-hover"></i></a>
+                    </div>
+                    <div class="col" data-toggle="tooltip" title="Twitter">
+                        <a href="https://twitter.com/manishmshiva" target="_blank"><i class="fa-brands fa-twitter fa-beat-hover"></i></a>
+                    </div>
+                </div>
+            </div>
             <div class="col-12 container-sub">
                 <img src="./dp.jpeg"/>
                 <h1>Manish M. Shivanandhan</h1>
-                <div class="row main-icons">
-                    <div class="col-2 offset-1"  data-toggle="tooltip" title="Blog">
-                        <a href="https://medium.com/@manishmshiva" target="_blank"><i class="fa-brands fa-medium fa-beat-hover fa-2x"></i></a>
+                <p class="summary">Engineer & Product Manager. Working on solving interesting problems using tech. <a href="https://youtube.com/@manishmshiva" target="_blank">Talks about tech</a> and <a href="https://medium.com/@manishmshiva" target="_blank"> writes about management</a>. Author at <a href="https://www.skillshare.com/en/profile/Manish-Shivanandhan/751005667" target="_blank">Skillshare</a>, <a href="https://www.educative.io/courses/scanning-with-nmap-a-complete-guide" target="_blank">Educative</a> and <a href="https://freecodecamp.org/news/author/manishmshiva" target="_blank">Freecodecamp</a>.</p>
+                <div class="row main-btns">
+                    <div class="col-4">
+                        <a href="https://youtube.com/@manishmshiva" target="_blank" class="btn btn-block btn-outline-danger"><i class="fa-brands fa-youtube"></i> Youtube</a>
                     </div>
-                    <div class="col-2"  data-toggle="tooltip" title="Youtube">
-                        <a href="https://www.youtube.com/@turingtalks_ai" target="_blank"><i class="fa-brands fa-youtube fa-beat-hover fa-2x"></i></a>
+                    <div class="col-4">
+                        <a href="https://medium.com/@manishmshiva" target="_blank" class="btn btn-block btn-outline-success"><i class="fa-brands fa-medium"></i> Blog</a>
                     </div>
-                    <div class="col-2" data-toggle="tooltip" title="Linkedin">
-                        <a href="https://www.linkedin.com/in/manishmshiva/" target="_blank"><i class="fa-brands fa-linkedin fa-beat-hover fa-2x"></i></a>
-                    </div>
-                    <div class="col-2" data-toggle="tooltip" title="Twitter">
-                        <a href="https://twitter.com/manishmshiva" target="_blank"><i class="fa-brands fa-twitter fa-beat-hover fa-2x"></i></a>
-                    </div>
-                    <div class="col-2" data-toggle="tooltip" title="Contact">
-                        <a href="https://topmate.io/manishmshiva?utm_source=website" target="_blank"><i class="fa-solid fa-envelope fa-beat-hover fa-2x"></i></a>
+                    <div class="col-4">
+                        <a href="https://topmate.io/manishmshiva" target="_blank" class="btn btn-block btn-outline-dark"><i class="fa-solid fa-envelope"></i> Contact</a>
                     </div>
                 </div>
-                <p class="summary">Engineer & Product Manager. Working on solving interesting problems using tech. Author at <a href="https://www.skillshare.com/en/profile/Manish-Shivanandhan/751005667" target="_blank">Skillshare</a>, <a href="https://www.educative.io/courses/scanning-with-nmap-a-complete-guide" target="_blank">Educative</a> and <a href="https://freecodecamp.org/news/author/manishmshiva" target="_blank">Freecodecamp</a>.</p>
+                <hr/>
+                <div class="row newsletter">
+                    <p>Join 2000+ subscribers to get notified of new articles, videos, webinars and products. Just one email every Friday. </p>
+                    <form action="https://buttondown.email/api/emails/embed-subscribe/manishmshiva"
+                    method="post"
+                    target="popupwindow"
+                    onsubmit="window.open('https://buttondown.email/manishmshiva', 'popupwindow')"
+                    class="embeddable-buttondown-form">
+                        <div class="row">
+                            <div class="col-10">
+                                <input type="email" name="email" id="bd-email" class="form-control" placeholder="Your email here..." autofocus required/>
+                            </div>
+                            <div class="col-2">
+                                <button type="submit" class="btn btn-danger"><i class="fa-solid fa-paper-plane"></i> Join</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <hr/>
                 <div class="row products">
                     <h4><i class="fa-solid fa-tools"></i> Products</h4>
                     
-                    <div class="col-4 product">
+                    <div class="col-6 product">
                         <a href="https://storyspec.xyz/" target="_blank">
                             <div class="card">
                                 <img src="./storyspec.png" class="card-img-top"/>
@@ -61,21 +83,8 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class="col-4 product">
-                        <a href="https://www.turingtalks.ai/" target="_blank">
-                            <div class="card">
-                                <img src="./turingtalks.png" class="card-img-top"/>
-                                <div class="card-body">
-                                    <h5 class="card-title">TuringTalks</h5>
-                                    <p class="card-text">Weekly newsletter delivering simple hands-on AI tutorials.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-4 product" data-toggle="tooltip" title="Coming soon...">
-                        <a href="#">
+                    <div class="col-6 product">
+                        <a href="https://apimetrics.pro/" target="_blank">
                             <div class="card">
                                 <img src="./api_meter.png" class="card-img-top"/>
                                 <div class="card-body">

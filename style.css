@@ -134,3 +134,6 @@ a:hover .fa-beat-hover {
     -o-animation: fa-flip 2s infinite both;
     animation: fa-flip 2s infinite both;
   }
+
+.fa-linkedin:hover{color: #0a66c2;}
+.fa-twitter:hover{color: #1da1f2;}

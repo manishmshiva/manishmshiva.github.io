@@ -10,16 +10,19 @@ h1,h2,h3,h4,h5,h6{
 }
 a:hover{color: #000;}
 .container-main{
-    max-width: 700px;
+    padding: 3%;
+    max-width: 1200px;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 5%;
     font-family: 'Ubuntu Mono', monospace;
     border-style: solid;
     border-color: transparent;
     border-radius: 12px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.container-sub{padding: 3%;
+.container-sub{border-right-style: solid;
+    border-width: 1px;
+    border-color: #b2bec3;
 }
 .container-sub img{height: 120px;
     width: 120px;
@@ -48,6 +51,7 @@ a:hover{color: #000;}
 }
 .container-posts a:hover,.container-videos a:hover{text-decoration: underline;}
 
+/* .products{padding: 3%;} */
 .products h4{margin: 1% 0%;}
 .product{
     padding:3%;
@@ -111,7 +115,12 @@ a:hover{color: #000;}
 #course-btn img{height: 25px;
 width: 25px;}
 @media screen and (max-width: 600px)  {
-    .cta button{margin-top: 5%;}
+    .products{margin-top: 3%;
+        border-top-style: solid;
+        border-width: 1px;
+        border-color: #b2bec3;
+    }
+    .products h2{margin-top: 5%;}
 }
 .content-icons a:hover{text-decoration: none;}
 a:hover .fa-beat-hover {
@@ -135,5 +144,5 @@ a:hover .fa-beat-hover {
     animation: fa-flip 2s infinite both;
   }
 
-.fa-linkedin:hover{color: #0a66c2;}
-.fa-twitter:hover{color: #1da1f2;}
+.fa-linkedin{color: #0a66c2;}
+.fa-twitter{color: #1da1f2;}

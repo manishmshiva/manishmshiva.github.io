@@ -1,91 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Ubuntu+Mono&display=swap');
 
+
 hr{border-width: 2px;
-    border-color: #b2bec3;
+    border-color: gray;
 }
 a{color: #333;}
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Roboto Slab', serif;
-    font-weight: bold;
-}
 a:hover{color: #000;}
 .container-main{
-    padding: 3%;
-    max-width: 1200px;
+    max-width: 500px;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 6%;
     font-family: 'Ubuntu Mono', monospace;
     border-style: solid;
     border-color: transparent;
     border-radius: 12px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.container-sub{border-right-style: solid;
-    border-width: 1px;
-    border-color: #b2bec3;
-}
+.container-sub{padding: 3%;}
 .container-sub img{height: 120px;
     width: 120px;
     border-radius: 60px;
 }
+.container-sub h1{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
 .summary{
     font-size: 17px;
 }
-.container-posts,.container-videos{
-    padding: 3%;
-    text-align: left;
-    border-left-style: solid;
-    border-color: #b2bec3;
-    overflow: auto;
-}
-.container-posts li,.container-videos li{list-style: none;
-    margin-top: 5%;
-    border-bottom-style: solid;
-    border-color: #b2bec3;
-    padding: 1%;
-}
-.container-posts a,.container-videos a{font-weight: bold;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-style: italic;
-}
-.container-posts a:hover,.container-videos a:hover{text-decoration: underline;}
-
-/* .products{padding: 3%;} */
-.products h4{margin: 1% 0%;}
-.product{
-    padding:3%;
-    text-align: center;
-}
-.product a{text-decoration: none;}
-.product img{height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.card{
-    cursor: pointer;
-    border-style: none;
-}
-.card:hover{border-style: solid;
-    border-width: 1px;
-    border-radius: 6px;
-}
-
+/* .summary:after {
+    content: "_";
+    animation: blink 1s infinite;
+    position: relative;
+    right: 1%;
+} */
 @keyframes blink {
     from { opacity: 1 }
     to { opacity: 0 }
 }
-.main-buttons{
-    border-width: 1px;
-    border-color: #b2bec3;
-    /* padding: 0% 10%; */
-}
-.sub-icons{padding: 3%;}
-.sub-icons i{
-    font-size: 1.5em;
+.main-icons{
+    padding: 1% 3%;
+    text-align: center;
+    margin-top: 3%;
 }
 .content-text{
     font-size: 18px;
@@ -106,6 +62,11 @@ a:hover{color: #000;}
 }
 .icon a:hover{text-decoration: underline;}
 
+.fa-twitter{color:  #1da1f2;}
+.fa-instagram{color: #c13584;}
+.fa-reddit{color: #ff4500;}
+.fa-spotify{color: #1db954}
+
 .cta{margin-bottom: 5%;
     font-size: 18px;
 }
@@ -119,12 +80,7 @@ a:hover{color: #000;}
 #course-btn img{height: 25px;
 width: 25px;}
 @media screen and (max-width: 600px)  {
-    .products{margin-top: 3%;
-        border-top-style: solid;
-        border-width: 1px;
-        border-color: #b2bec3;
-    }
-    .products h2{margin-top: 5%;}
+    .cta button{margin-top: 5%;}
 }
 .content-icons a:hover{text-decoration: none;}
 a:hover .fa-beat-hover {
@@ -147,6 +103,3 @@ a:hover .fa-beat-hover {
     -o-animation: fa-flip 2s infinite both;
     animation: fa-flip 2s infinite both;
   }
-
-.fa-linkedin{color: #0a66c2;}
-.fa-twitter{color: #1da1f2;}

@@ -74,6 +74,9 @@ a:hover{color: #000;}
 }
 .cta button{width: 100%;}
 
+#beer{border-right: solid;
+    border-color: gray;
+}
 #course-btn{
     margin-top: 3%;
 }

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Serif+Display&display=swap');
+
+html {
+    overflow-y: auto; /* scrollbar only when content overflows */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #94a3b8 transparent;
+}
+
+/* Use dynamic viewport height so the fold matches visible area and we avoid a spurious scrollbar */
+main {
+    min-height: 100dvh;
+}
+@supports not (min-height: 100dvh) {
+    main {
+        min-height: 100vh;
+    }
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 8px;
+}
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 4px;
+}
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+footer {
+    font-size: 13px;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+/* Tooltip above icon on hover */
+.tooltip-above {
+    position: relative;
+}
+.tooltip-above::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-0.5rem);
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    background: #334155;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    margin-bottom: 0.25rem;
+}
+.tooltip-above:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-0.25rem);
+}
